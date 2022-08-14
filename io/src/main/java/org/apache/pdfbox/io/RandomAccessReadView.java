@@ -42,6 +42,7 @@ public class RandomAccessReadView implements RandomAccessRead
      * @param randomAccessRead the underlying random access read
      * @param startPosition start position within the underlying random access read
      * @param streamLength stream length
+     * done
      */
     public RandomAccessReadView(RandomAccessRead randomAccessRead, long startPosition,
             long streamLength)
@@ -51,7 +52,7 @@ public class RandomAccessReadView implements RandomAccessRead
 
     /**
      * Constructor.
-     * 
+     * done
      * @param randomAccessRead the underlying random access read
      * @param startPosition start position within the underlying random access read
      * @param streamLength stream length

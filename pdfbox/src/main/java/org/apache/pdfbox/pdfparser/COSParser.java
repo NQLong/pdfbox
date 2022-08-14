@@ -578,6 +578,7 @@ public class COSParser extends BaseParser implements ICOSParser
         return parsedObj;
     }
 
+    /*done */
     @Override
     public RandomAccessReadView createRandomAccessReadView(long startPosition, long streamLength)
             throws IOException
@@ -936,6 +937,7 @@ public class COSParser extends BaseParser implements ICOSParser
      * @param out  stream we write out to.
      * 
      * @throws IOException if something went wrong
+     * done
      */
     private long readUntilEndStream(final EndstreamFilterStream out) throws IOException
     {

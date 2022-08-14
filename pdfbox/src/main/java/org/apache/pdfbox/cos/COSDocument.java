@@ -177,6 +177,7 @@ public class COSDocument extends COSBase implements Closeable
      * @param streamLength  the stream length
      * @return the new COSStream
      * @throws IOException if the random access view can't be read
+     * done
      */
     public COSStream createCOSStream(COSDictionary dictionary, long startPosition,
             long streamLength) throws IOException

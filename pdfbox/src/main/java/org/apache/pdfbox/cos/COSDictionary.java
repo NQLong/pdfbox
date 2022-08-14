@@ -194,6 +194,7 @@ public class COSDictionary extends COSBase implements COSUpdateInfo
      *
      * @param key The key to the dictionary object.
      * @param value The value to the dictionary object.
+     * done
      */
     public void setItem(COSName key, COSBase value)
     {
@@ -1230,6 +1231,7 @@ public class COSDictionary extends COSBase implements COSUpdateInfo
      * {@link Map#forEach(java.util.function.BiConsumer) Map.forEach(BiConsumer)}.
      *
      * @param action
+     * done
      */
     public void forEach(BiConsumer<? super COSName, ? super COSBase> action)
     {

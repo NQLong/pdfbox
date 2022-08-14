@@ -358,6 +358,7 @@ public class RandomAccessReadBuffer implements RandomAccessRead
     }
 
     @Override
+    /*done */
     public RandomAccessReadView createView(long startPosition, long streamLength) throws IOException
     {
         return new RandomAccessReadView(new RandomAccessReadBuffer(this), startPosition,

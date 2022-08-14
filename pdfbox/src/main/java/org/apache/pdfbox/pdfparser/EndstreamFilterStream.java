@@ -106,7 +106,7 @@ class EndstreamFilterStream
     /**
      * write out a single CR if one was kept. Don't write kept CR LF or LF, 
      * and then call the base method to flush.
-     * 
+     * done
      */
     public long calculateLength()
     {
