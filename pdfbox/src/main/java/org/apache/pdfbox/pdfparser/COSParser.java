@@ -658,6 +658,13 @@ public class COSParser extends BaseParser implements ICOSParser
         return offsetOrObjstmObNr;
     }
 
+    /**
+     * done
+     * @param offsetOrObjstmObNr
+     * @param objKey
+     * @return
+     * @throws IOException
+     */
     private COSBase parseFileObject(Long offsetOrObjstmObNr, final COSObjectKey objKey)
             throws IOException
     {
@@ -800,7 +807,8 @@ public class COSParser extends BaseParser implements ICOSParser
     }
 
     /** 
-     * Returns length value referred to or defined in given object. 
+     * Returns length value referred to or defined in given object.
+     * done 
      */
     private COSNumber getLength(final COSBase lengthBaseObj) throws IOException
     {
@@ -852,6 +860,7 @@ public class COSParser extends BaseParser implements ICOSParser
      *
      * @throws IOException if an error occurred reading the stream, like problems with reading
      * length attribute, stream does not end with 'endstream' after data read, stream too short etc.
+     * done
      */
     protected COSStream parseCOSStream(COSDictionary dic) throws IOException
     {
@@ -1022,6 +1031,7 @@ public class COSParser extends BaseParser implements ICOSParser
         return out.calculateLength();
     }
 
+    /*done */
     private boolean validateStreamLength(long streamLength) throws IOException
     {
         boolean streamLengthIsValid = true;

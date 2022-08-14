@@ -323,6 +323,7 @@ public abstract class BaseParser
         return true;
     }
 
+    /**done */
     protected void skipWhiteSpaces() throws IOException
     {
         //PDF Ref 3.2.7 A stream must be followed by either
@@ -815,6 +816,7 @@ public abstract class BaseParser
      * @return The parsed object.
      *
      * @throws IOException If there is an error during parsing.
+     * done
      */
     protected COSBase parseDirObject() throws IOException
     {
@@ -909,6 +911,7 @@ public abstract class BaseParser
      * @return The string that was read from the stream, never null.
      *
      * @throws IOException If there is an error reading from the stream.
+     * done
      */
     protected String readString() throws IOException
     {

@@ -99,6 +99,8 @@ public class COSObject extends COSBase implements COSUpdateInfo
      * Indicates if the referenced object is present or not.
      * 
      * @return true if the indirect object is dereferenced
+     * 
+     * done
      */
     public boolean isObjectNull()
     {
@@ -109,6 +111,8 @@ public class COSObject extends COSBase implements COSUpdateInfo
      * This will get the object that this object encapsulates.
      *
      * @return The encapsulated object.
+     * 
+     * done
      */
     public COSBase getObject()
     {
@@ -158,6 +162,7 @@ public class COSObject extends COSBase implements COSUpdateInfo
     /** 
      * Getter for property objectNumber.
      * @return Value of property objectNumber.
+     * done
      */
     public long getObjectNumber()
     {
@@ -167,6 +172,7 @@ public class COSObject extends COSBase implements COSUpdateInfo
     /** 
      * Getter for property generationNumber.
      * @return Value of property generationNumber.
+     * done
      */
     public int getGenerationNumber()
     {

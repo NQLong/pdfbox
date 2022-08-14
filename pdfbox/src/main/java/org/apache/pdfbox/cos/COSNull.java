@@ -28,16 +28,19 @@ public final class COSNull extends COSBase
 {
     /**
      * The null token.
+     * done
      */
     public static final byte[] NULL_BYTES = new byte[] {110, 117, 108, 108}; //"null".getBytes( "ISO-8859-1" );
 
     /**
      * The one null object in the system.
+     * done
      */
     public static final COSNull NULL = new COSNull();
 
     /**
      * Constructor.
+     * done
      */
     private COSNull()
     {
@@ -69,6 +72,7 @@ public final class COSNull extends COSBase
 
     /**
      * {@inheritDoc}
+     * done
      */
     @Override
     public String toString()
