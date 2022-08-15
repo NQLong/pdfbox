@@ -318,6 +318,8 @@ public class COSUpdateState
      *
      * @param child The child, that has been dereferenced.
      * @see #setOriginDocumentState(COSDocumentState, boolean)
+     * 
+     * done
      */
     void dereferenceChild(COSBase child)
     {

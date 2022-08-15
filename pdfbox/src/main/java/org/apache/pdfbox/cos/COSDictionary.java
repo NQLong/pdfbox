@@ -156,6 +156,8 @@ public class COSDictionary extends COSBase implements COSUpdateInfo
      * @param secondKey The second key to try.
      *
      * @return The object that matches the key.
+     * 
+     * done
      */
     public COSBase getDictionaryObject(COSName firstKey, COSName secondKey)
     {
@@ -174,6 +176,8 @@ public class COSDictionary extends COSBase implements COSUpdateInfo
      * @param key The key to the object that we are getting.
      *
      * @return The object that matches the key.
+     * 
+     * done
      */
     public COSBase getDictionaryObject(COSName key)
     {
@@ -943,6 +947,8 @@ public class COSDictionary extends COSBase implements COSUpdateInfo
      *
      * @param key The key to the item in the dictionary.
      * @return The integer value.
+     * 
+     * done
      */
     public int getInt(String key)
     {
@@ -955,6 +961,8 @@ public class COSDictionary extends COSBase implements COSUpdateInfo
      *
      * @param key The key to the item in the dictionary.
      * @return The integer value..
+     * 
+     * done
      */
     public int getInt(COSName key)
     {
@@ -968,6 +976,8 @@ public class COSDictionary extends COSBase implements COSUpdateInfo
      * @param key The key to the item in the dictionary.
      * @param defaultValue The value to return if the dictionary item is null.
      * @return The integer value.
+     * 
+     * done
      */
     public int getInt(String key, int defaultValue)
     {
@@ -981,6 +991,8 @@ public class COSDictionary extends COSBase implements COSUpdateInfo
      * @param key The key to the item in the dictionary.
      * @param defaultValue The value to return if the dictionary item is null.
      * @return The integer value.
+     * 
+     * done
      */
     public int getInt(COSName key, int defaultValue)
     {
@@ -994,6 +1006,8 @@ public class COSDictionary extends COSBase implements COSUpdateInfo
      * @param firstKey The first key to the item in the dictionary.
      * @param secondKey The second key to the item in the dictionary.
      * @return The integer value.
+     * 
+     * done
      */
     public int getInt(COSName firstKey, COSName secondKey)
     {
@@ -1008,6 +1022,8 @@ public class COSDictionary extends COSBase implements COSUpdateInfo
      * @param secondKey The second key to the item in the dictionary.
      * @param defaultValue The value to return if the dictionary item is null.
      * @return The integer value.
+     * 
+     * done
      */
     public int getInt(COSName firstKey, COSName secondKey, int defaultValue)
     {

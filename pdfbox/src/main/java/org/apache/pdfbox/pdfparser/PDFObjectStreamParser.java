@@ -44,6 +44,8 @@ public class PDFObjectStreamParser extends BaseParser
      * @param stream The stream to parse.
      * @param document The document for the current parsing.
      * @throws IOException If there is an error initializing the stream.
+     * 
+     * done
      */
     public PDFObjectStreamParser(COSStream stream, COSDocument document) throws IOException
     {
@@ -115,6 +117,7 @@ public class PDFObjectStreamParser extends BaseParser
      * 
      * @return a map containing all parsed objects using the object number as key
      * @throws IOException if there is an error while parsing the stream
+     * done
      */
     public Map<Long, COSBase> parseAllObjects() throws IOException
     {
@@ -171,6 +174,7 @@ public class PDFObjectStreamParser extends BaseParser
         return objectNumbers;
     }
 
+    /*done */
     private Map<Integer, Long> privateReadObjectOffsets() throws IOException
     {
         // according to the pdf spec the offsets shall be sorted ascending

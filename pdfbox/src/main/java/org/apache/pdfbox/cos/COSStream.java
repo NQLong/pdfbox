@@ -131,6 +131,7 @@ public class COSStream extends COSDictionary implements Closeable
      * 
      * @return InputStream containing raw, encoded PDF stream data.
      * @throws IOException If the stream could not be read.
+     * done
      */
     public InputStream createRawInputStream() throws IOException
     {
@@ -180,6 +181,8 @@ public class COSStream extends COSDictionary implements Closeable
      * 
      * @return RandomAccessRead containing decoded stream data.
      * @throws IOException If the stream could not be read.
+     * 
+     * done
      */
     public RandomAccessRead createView() throws IOException
     {
@@ -324,6 +327,7 @@ public class COSStream extends COSDictionary implements Closeable
     
     /**
      * Returns the list of filters.
+     * done
      */
     private List<Filter> getFilterList() throws IOException
     {
