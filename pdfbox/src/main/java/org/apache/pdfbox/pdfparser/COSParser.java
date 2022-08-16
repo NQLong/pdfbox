@@ -224,6 +224,7 @@ public class COSParser extends BaseParser implements ICOSParser
             // parse startxref
             // TODO FDF files don't have a startxref value, so that rebuildTrailer is triggered
             long startXRefOffset = getStartxrefOffset();
+            LOG.info(startXRefOffset);
             if (startXRefOffset > -1)
             {
                 trailer = parseXref(startXRefOffset);
@@ -257,6 +258,7 @@ public class COSParser extends BaseParser implements ICOSParser
         else
         {
             // prepare decryption if necessary
+            LOG.info("hello");
             prepareDecryption();
             if (bruteForceSearchSuccessful)
             {
@@ -418,6 +420,7 @@ public class COSParser extends BaseParser implements ICOSParser
      * Parses an xref object stream starting with indirect object id.
      * 
      * @return value of PREV item in dictionary or <code>-1</code> if no such item exists
+     * done
      */
     private long parseXrefObjStream(long objByteOffset, boolean isStandalone) throws IOException
     {
@@ -1153,6 +1156,8 @@ public class COSParser extends BaseParser implements ICOSParser
      * @return the fixed offset
      * 
      * @throws IOException if something went wrong
+     * 
+     * done
      */
     private long calculateXRefFixedOffset(long objectOffset) throws IOException
     {
@@ -1172,6 +1177,7 @@ public class COSParser extends BaseParser implements ICOSParser
         return 0;
     }
 
+    /*done */
     private boolean validateXrefOffsets(Map<COSObjectKey, Long> xrefOffset) throws IOException
     {
         if (xrefOffset == null)
@@ -1228,6 +1234,8 @@ public class COSParser extends BaseParser implements ICOSParser
      * Check the XRef table by dereferencing all objects and fixing the offset if necessary.
      * 
      * @throws IOException if something went wrong.
+     * 
+     * done
      */
     private void checkXrefOffsets() throws IOException
     {
@@ -1255,6 +1263,7 @@ public class COSParser extends BaseParser implements ICOSParser
      * @return returns the found/fixed object key
      * 
      * @throws IOException if something went wrong
+     * done
      */
     private COSObjectKey findObjectKey(COSObjectKey objectKey, long offset,
             Map<COSObjectKey, Long> xrefOffset) throws IOException
@@ -1488,6 +1497,7 @@ public class COSParser extends BaseParser implements ICOSParser
      *
      * @return false on parsing error
      * @throws IOException If an IO error occurs.
+     * done
      */
     private boolean parseTrailer() throws IOException
     {
@@ -1658,6 +1668,7 @@ public class COSParser extends BaseParser implements ICOSParser
      * @param startByteOffset the offset to start at
      * @return false on parsing error
      * @throws IOException If an IO error occurs.
+     * done
      */
     protected boolean parseXrefTable(long startByteOffset) throws IOException
     {
@@ -1781,6 +1792,8 @@ public class COSParser extends BaseParser implements ICOSParser
      * @param objByteOffset the offset to start at
      * @param isStandalone should be set to true if the stream is not part of a hybrid xref table
      * @throws IOException if there is an error parsing the stream
+     * 
+     * done
      */
     private void parseXrefStream(COSStream stream, long objByteOffset, boolean isStandalone) throws IOException
     {

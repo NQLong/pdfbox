@@ -109,6 +109,7 @@ final class PDFDocEncoding
     {
     }
 
+    /*done */
     private static void set(int code, char unicode)
     {
         CODE_TO_UNI[code] = unicode;
@@ -117,6 +118,7 @@ final class PDFDocEncoding
 
     /**
      * Returns the string representation of the given PDFDocEncoded bytes.
+     * done
      */
     public static String toString(byte[] bytes)
     {

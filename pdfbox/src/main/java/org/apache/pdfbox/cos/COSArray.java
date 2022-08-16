@@ -457,6 +457,7 @@ public class COSArray extends COSBase implements Iterable<COSBase>, COSUpdateInf
      * Get access to the list.
      *
      * @return an iterator over the array elements
+     * done
      */
     @Override
     public Iterator<COSBase> iterator()

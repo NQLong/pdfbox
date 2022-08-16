@@ -401,6 +401,8 @@ public class COSDictionary extends COSBase implements COSUpdateInfo
      *
      * @param key The key to the object,
      * @param value The int value for the name.
+     * 
+     * done
      */
     public void setInt(String key, int value)
     {
@@ -412,6 +414,7 @@ public class COSDictionary extends COSBase implements COSUpdateInfo
      *
      * @param key The key to the object,
      * @param value The int value for the name.
+     * done
      */
     public void setInt(COSName key, int value)
     {
@@ -423,6 +426,8 @@ public class COSDictionary extends COSBase implements COSUpdateInfo
      *
      * @param key The key to the object,
      * @param value The int value for the name.
+     * 
+     * done
      */
     public void setLong(String key, long value)
     {
@@ -434,6 +439,7 @@ public class COSDictionary extends COSBase implements COSUpdateInfo
      *
      * @param key The key to the object,
      * @param value The int value for the name.
+     * done
      */
     public void setLong(COSName key, long value)
     {
@@ -594,6 +600,7 @@ public class COSDictionary extends COSBase implements COSUpdateInfo
      * returned if the entry does not exist in the dictionary.
      *
      * @param key The key to the item in the dictionary.
+     * done
      * @return The COSArray.
      */
     public COSArray getCOSArray(COSName key)
@@ -642,6 +649,7 @@ public class COSDictionary extends COSBase implements COSUpdateInfo
      *
      * @param key The key to the item in the dictionary.
      * @return The name converted to a string.
+     * done
      */
     public String getNameAsString(COSName key)
     {
@@ -1180,6 +1188,7 @@ public class COSDictionary extends COSBase implements COSUpdateInfo
      * @param key The key to the object.
      *
      * @return The item that matches the key.
+     * done
      */
     public COSBase getItem(COSName key)
     {
@@ -1192,6 +1201,7 @@ public class COSDictionary extends COSBase implements COSUpdateInfo
      * @param key The key to the object.
      *
      * @return The item that matches the key.
+     * done
      */
     public COSBase getItem(String key)
     {
@@ -1207,6 +1217,7 @@ public class COSDictionary extends COSBase implements COSUpdateInfo
      * @param secondKey The second key to try.
      *
      * @return The object that matches the key.
+     * done
      */
     public COSBase getItem(COSName firstKey, COSName secondKey)
     {
@@ -1281,6 +1292,8 @@ public class COSDictionary extends COSBase implements COSUpdateInfo
      * overwritten.
      *
      * @param dic The dictionaries to get the key/value pairs from.
+     * 
+     * done
      */
     public void addAll(COSDictionary dic)
     {
@@ -1292,6 +1305,8 @@ public class COSDictionary extends COSBase implements COSUpdateInfo
      *
      * @param name The key to find in the map.
      * @return true if the map contains this key.
+     * 
+     * done
      */
     public boolean containsKey(COSName name)
     {
@@ -1303,6 +1318,8 @@ public class COSDictionary extends COSBase implements COSUpdateInfo
      *
      * @param name The key to find in the map.
      * @return true if the map contains this key.
+     * 
+     * done
      */
     public boolean containsKey(String name)
     {

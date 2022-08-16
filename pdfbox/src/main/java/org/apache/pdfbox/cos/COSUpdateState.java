@@ -78,6 +78,7 @@ public class COSUpdateState
      * @param originDocumentState The {@link COSDocumentState} that shall be linked to this {@link COSUpdateState}.
      * @see #originDocumentState
      * @see #updated
+     * done
      */
     public void setOriginDocumentState(COSDocumentState originDocumentState)
     {
@@ -114,6 +115,7 @@ public class COSUpdateState
      *                            dereferencing a {@link COSObject}.
      * @see #originDocumentState
      * @see #updated
+     * done
      */
     private void setOriginDocumentState(COSDocumentState originDocumentState, boolean dereferencing)
     {
@@ -212,6 +214,8 @@ public class COSUpdateState
      * @see #update(boolean)
      * @see #updated
      * @see #isAcceptingUpdates()
+     * 
+     * done
      */
     void update()
     {
@@ -226,6 +230,8 @@ public class COSUpdateState
      * @see #update(boolean)
      * @see #updated
      * @see #isAcceptingUpdates()
+     * 
+     * done
      */
     void update(boolean updated)
     {

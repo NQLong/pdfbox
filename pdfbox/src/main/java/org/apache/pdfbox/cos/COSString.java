@@ -172,6 +172,7 @@ public final class COSString extends COSBase
 
     /**
      * Returns the content of this string as a PDF <i>text string</i>.
+     * done
      */
     public String getString()
     {

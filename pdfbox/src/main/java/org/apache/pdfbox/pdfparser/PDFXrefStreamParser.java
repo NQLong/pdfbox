@@ -48,6 +48,7 @@ public class PDFXrefStreamParser extends BaseParser
      * @param document The document for the current parsing.
      *
      * @throws IOException If there is an error initializing the stream.
+     * done
      */
     public PDFXrefStreamParser(COSStream stream, COSDocument document)
             throws IOException
@@ -65,6 +66,7 @@ public class PDFXrefStreamParser extends BaseParser
         }
     }
 
+    /*done */
     private void initParserValues(COSStream stream) throws IOException
     {
         COSArray wArray = stream.getCOSArray(COSName.W);
@@ -118,6 +120,7 @@ public class PDFXrefStreamParser extends BaseParser
      * 
      * @param resolver resolver to read the xref/trailer information
      * @throws IOException If there is an error while parsing the stream.
+     * done
      */
     public void parse(XrefTrailerResolver resolver) throws IOException
     {
@@ -153,7 +156,7 @@ public class PDFXrefStreamParser extends BaseParser
         }
         close();
     }
-
+    /* done */
     private long parseValue(byte[] data, int start, int length)
     {
         long value = 0;
@@ -205,12 +208,14 @@ public class PDFXrefStreamParser extends BaseParser
             maxValue = end[counter - 1];
         }
 
+        /*done */
         @Override
         public boolean hasNext()
         {
             return currentNumber < maxValue;
         }
 
+        /*done */
         @Override
         public Long next()
         {

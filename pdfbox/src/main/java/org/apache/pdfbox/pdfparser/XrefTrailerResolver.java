@@ -160,6 +160,8 @@ public class XrefTrailerResolver
      * Returns the XRefTxpe of the resolved trailer.
      * 
      * @return the XRefType or null.
+     * 
+     * done
      */
     public XRefType getXrefType()
     { 
@@ -227,6 +229,8 @@ public class XrefTrailerResolver
      * startxref one could call this method with parameter value -1.
      * 
      * @param startxrefBytePosValue starting position of the first XRef
+     * 
+     * done
      * 
      */
     public void setStartxref( long startxrefBytePosValue )

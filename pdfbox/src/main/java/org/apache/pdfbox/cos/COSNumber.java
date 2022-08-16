@@ -54,6 +54,7 @@ public abstract class COSNumber extends COSBase
      * @return A number object, either float or int.
      *
      * @throws IOException If the string is not a number.
+     * done
      */
     public static COSNumber get( String number ) throws IOException
     {
@@ -94,6 +95,7 @@ public abstract class COSNumber extends COSBase
         }
     }
 
+    /*done */
     private static boolean isFloat( String number )
     {
         int length = number.length();

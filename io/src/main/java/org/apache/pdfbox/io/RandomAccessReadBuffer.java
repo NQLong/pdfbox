@@ -349,6 +349,7 @@ public class RandomAccessReadBuffer implements RandomAccessRead
 
     /**
      * {@inheritDoc}
+     * done
      */
     @Override
     public boolean isEOF() throws IOException

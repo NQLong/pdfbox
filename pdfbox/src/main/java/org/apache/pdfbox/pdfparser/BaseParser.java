@@ -146,6 +146,7 @@ public abstract class BaseParser
      * @return The parsed Dictionary object.
      *
      * @throws IOException If there is an error parsing the dictionary object.
+     * done
      */
     private COSBase parseCOSDictionaryValue() throws IOException
     {
@@ -188,6 +189,7 @@ public abstract class BaseParser
         return getObjectFromPool(new COSObjectKey(objNumber, genNumber));
     }
 
+    /*done */
     private COSBase getObjectFromPool(COSObjectKey key) throws IOException
     {
         if (document == null)
@@ -227,6 +229,7 @@ public abstract class BaseParser
             {
                 // something went wrong, most likely the dictionary is corrupted
                 // stop immediately and return everything read so far
+                LOG.info("abc " + source.getPosition());
                 if (!parseCOSDictionaryNameValuePair(obj))
                 {
                     return obj;
@@ -257,6 +260,7 @@ public abstract class BaseParser
      * caller can continue to parse the dictionary at the current position.
      *
      * @throws IOException if there is a reading error.
+     * done
      */
     private boolean readUntilEndOfCOSDictionary() throws IOException
     {
@@ -1080,6 +1084,8 @@ public abstract class BaseParser
      * 
      * @return true if the end of the data is reached.
      * @throws IOException If there is an error reading from the stream.
+     * 
+     * done
      */
     protected boolean isEOF() throws IOException
     {

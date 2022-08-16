@@ -202,6 +202,7 @@ public class COSObject extends COSBase implements COSUpdateInfo
     /**
      * Returns {@code true}, if the hereby referenced {@link COSBase} has already been parsed and loaded.
      *
+     * done
      * @return {@code true}, if the hereby referenced {@link COSBase} has already been parsed and loaded.
      */
     public boolean isDereferenced()

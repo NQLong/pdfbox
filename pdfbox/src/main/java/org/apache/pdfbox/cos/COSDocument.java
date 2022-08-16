@@ -362,6 +362,8 @@ public class COSDocument extends COSBase implements Closeable
      * This will set the document trailer.
      *
      * @param newTrailer the document trailer dictionary
+     * 
+     * done
      */
     public void setTrailer(COSDictionary newTrailer)
     {
@@ -385,6 +387,7 @@ public class COSDocument extends COSBase implements Closeable
      * to avoid reusing such a number in incremental saving.
      *
      * @param highestXRefObjectNumber The object number of the highest XRef stream.
+     * done
      */
     public void setHighestXRefObjectNumber(long highestXRefObjectNumber)
     {
@@ -486,6 +489,8 @@ public class COSDocument extends COSBase implements Closeable
      * Populate XRef HashMap with given values.
      * Each entry maps ObjectKeys to byte offsets in the file.
      * @param xrefTableValues  xref table entries to be added
+     * 
+     * done
      */
     public void addXRefTable( Map<COSObjectKey, Long> xrefTableValues )
     {
@@ -496,6 +501,7 @@ public class COSDocument extends COSBase implements Closeable
      * Returns the xrefTable which is a mapping of ObjectKeys
      * to byte offsets in the file.
      * @return mapping of ObjectsKeys to byte offsets
+     * done
      */
     public Map<COSObjectKey, Long> getXrefTable()
     {
@@ -505,6 +511,8 @@ public class COSDocument extends COSBase implements Closeable
     /**
      * This method set the startxref value of the document. This will only 
      * be needed for incremental updates.
+     * 
+     * done
      * 
      * @param startXrefValue the value for startXref
      */
@@ -538,6 +546,8 @@ public class COSDocument extends COSBase implements Closeable
      * 1.5 or higher.
      *
      * @param isXRefStreamValue the new value for isXRefStream
+     * 
+     * done
      */
     public void setIsXRefStream(boolean isXRefStreamValue)
     {
