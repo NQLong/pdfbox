@@ -751,6 +751,7 @@ public class PDDocument implements Closeable
      * This will get the document CATALOG. This is guaranteed to not return null.
      * 
      * @return The documents /Root dictionary
+     * done
      */
     public PDDocumentCatalog getDocumentCatalog()
     {
@@ -801,6 +802,7 @@ public class PDDocument implements Closeable
      * This will set the encryption dictionary for this document.
      * 
      * @param encryption The encryption dictionary(most likely a PDStandardEncryption object)
+     * done
      */
     public void setEncryptionDictionary(PDEncryption encryption)
     {
@@ -1156,6 +1158,7 @@ public class PDDocument implements Closeable
      *
      * @param pageIndex the 0-based page index
      * @return the page at the given index.
+     * done
      */
     public PDPage getPage(int pageIndex) // todo: REPLACE most calls to this method with BELOW method
     {
@@ -1390,6 +1393,7 @@ public class PDDocument implements Closeable
 
     /**
      * Returns the resource cache associated with this document, or null if there is none.
+     * done
      */
     public ResourceCache getResourceCache()
     {

@@ -83,6 +83,7 @@ public abstract class COSBase implements COSObjectable
      * This will return the COSObjectKey of an indirect object.
      * 
      * @return the COSObjectKey
+     * done
      */
     public COSObjectKey getKey()
     {

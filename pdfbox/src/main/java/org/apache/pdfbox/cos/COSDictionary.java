@@ -515,6 +515,7 @@ public class COSDictionary extends COSBase implements COSUpdateInfo
      *
      * @param key The key to the item in the dictionary.
      * @return The COS name.
+     * done
      */
     public COSName getCOSName(COSName key)
     {

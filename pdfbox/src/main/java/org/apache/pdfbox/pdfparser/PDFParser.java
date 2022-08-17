@@ -125,7 +125,8 @@ public class PDFParser extends COSParser
     protected void initialParse() throws IOException
     {
         COSDictionary trailer = retrieveTrailer();
-    
+        if (trailer instanceof COSDictionary)
+            throw new IOException("asdsaddasd");
         COSDictionary root = trailer.getCOSDictionary(COSName.ROOT);
         if (root == null)
         {
@@ -199,6 +200,7 @@ public class PDFParser extends COSParser
      * 
      * @return the resulting document
      * @throws IOException if the method is called before parsing the document
+     * done
      */
     protected PDDocument createDocument() throws IOException
     {

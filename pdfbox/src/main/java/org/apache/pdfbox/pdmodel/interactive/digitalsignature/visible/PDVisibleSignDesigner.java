@@ -113,6 +113,7 @@ public class PDVisibleSignDesigner
      * @param imageStream Image as a stream.
      * @param page The 1-based page number for which the page size should be calculated.
      * @throws IOException If we can't read, flush, or can't close stream.
+     * done
      */
     public PDVisibleSignDesigner(PDDocument document, InputStream imageStream, int page) throws IOException
     {
@@ -213,6 +214,7 @@ public class PDVisibleSignDesigner
      * @param document
      * @param page The 1-based page number for which the page size should be calculated.
      * @throws IllegalArgumentException if the page argument is lower than 0.
+     * done
      */
     private void calculatePageSize(PDDocument document, int page)
     {

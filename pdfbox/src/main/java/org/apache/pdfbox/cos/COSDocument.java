@@ -279,6 +279,7 @@ public class COSDocument extends COSBase implements Closeable
 
     /** 
      * Signals that the document is decrypted completely.
+     * done
      */
     public void setDecrypted()
     {
@@ -351,6 +352,7 @@ public class COSDocument extends COSBase implements Closeable
      * This will get the document trailer.
      *
      * @return the document trailer dict
+     * done
      */
     public COSDictionary getTrailer()
     {
@@ -559,6 +561,7 @@ public class COSDocument extends COSBase implements Closeable
      *
      * @return The {@link COSDocumentState} of this {@link COSDocument}.
      * @see COSDocumentState
+     * done
      */
     public COSDocumentState getDocumentState()
     {

@@ -278,6 +278,7 @@ public class COSParser extends BaseParser implements ICOSParser
      * resolver is needed after the initial parsing.
      * 
      * @return true if the xref trailer resolver should be reset
+     * done
      */
     protected boolean resetTrailerResolver()
     {
@@ -1363,6 +1364,8 @@ public class COSParser extends BaseParser implements ICOSParser
      * 
      * @param root the root dictionary of the pdf
      * @throws java.io.IOException if the page tree root is null
+     * 
+     * done
      */
     protected void checkPages(COSDictionary root) throws IOException
     {
@@ -1381,6 +1384,7 @@ public class COSParser extends BaseParser implements ICOSParser
         }
     }
 
+    /*done */
     private int checkPagesDictionary(COSDictionary pagesDict, Set<COSObject> set)
     {
         // check for kids
@@ -1814,6 +1818,7 @@ public class COSParser extends BaseParser implements ICOSParser
      * @return The encryption dictionary of the document that was parsed.
      *
      * @throws IOException If there is an error getting the document.
+     * done
      */
     protected PDEncryption getEncryption() throws IOException
     {

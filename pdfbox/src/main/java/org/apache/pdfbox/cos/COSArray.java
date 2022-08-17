@@ -404,6 +404,7 @@ public class COSArray extends COSBase implements Iterable<COSBase>, COSUpdateInf
      *
      * @return <code>true</code> if the object was removed, <code>false</code>
      *  otherwise
+     * done
      */
     public boolean remove( COSBase o )
     {
@@ -595,6 +596,8 @@ public class COSArray extends COSBase implements Iterable<COSBase>, COSUpdateInf
      *  Return contents of COSArray as a Java List.
      *
      *  @return the COSArray as List
+     * 
+     * done
      */
     public List<? extends COSBase> toList()
     {

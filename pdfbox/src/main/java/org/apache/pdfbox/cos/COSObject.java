@@ -139,6 +139,7 @@ public class COSObject extends COSBase implements COSUpdateInfo
 
     /**
      * Sets the referenced object to COSNull and removes the initially assigned parser.
+     * done
      */
     public final void setToNull()
     {

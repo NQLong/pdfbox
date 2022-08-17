@@ -85,6 +85,7 @@ public class PDDocumentCatalog implements COSObjectable
      *
      * @param doc The document that this catalog is part of.
      * @param rootDictionary The root dictionary that this object wraps.
+     * done
      */
     protected PDDocumentCatalog(PDDocument doc, COSDictionary rootDictionary)
     {
@@ -158,6 +159,7 @@ public class PDDocumentCatalog implements COSObjectable
 
     /**
      * Returns all pages in the document, as a page tree.
+     * done
      */
     public PDPageTree getPages()
     {
