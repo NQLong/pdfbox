@@ -494,6 +494,7 @@ public class COSDictionary extends COSBase implements COSUpdateInfo
      * @param field The COSName of the field to set the value into.
      * @param bitFlag the bit position to set the value in.
      * @param value the value the bit position should have.
+     * done
      */
     public void setFlag(COSName field, int bitFlag, boolean value)
     {
@@ -568,6 +569,7 @@ public class COSDictionary extends COSBase implements COSUpdateInfo
      * @param firstKey The first key to the item in the dictionary.
      * @param secondKey The second key to the item in the dictionary.
      * @return The COSDictionary.
+     * done
      */
     public COSDictionary getCOSDictionary(COSName firstKey, COSName secondKey)
     {
@@ -716,6 +718,7 @@ public class COSDictionary extends COSBase implements COSUpdateInfo
      *
      * @param key The key to the item in the dictionary.
      * @return The name converted to a string.
+     * done
      */
     public String getString(COSName key)
     {
