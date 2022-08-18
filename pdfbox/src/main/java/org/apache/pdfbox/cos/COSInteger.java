@@ -152,6 +152,8 @@ public final class COSInteger extends COSNumber
      * polymorphic access to value as float.
      *
      * @return The float value of this object.
+     * 
+     * done
      */
     @Override
     public float floatValue()

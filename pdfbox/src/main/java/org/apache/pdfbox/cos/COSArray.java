@@ -169,6 +169,7 @@ public class COSArray extends COSBase implements Iterable<COSBase>, COSUpdateInf
      *
      * @param index zero based index into array.
      * @param object The object to set.
+     * done
      */
     public void set( int index, COSBase object )
     {
@@ -212,6 +213,7 @@ public class COSArray extends COSBase implements Iterable<COSBase>, COSUpdateInf
      * @param index The index into the array to get the object.
      *
      * @return The object at the requested index.
+     * done
      */
     public COSBase getObject( int index )
     {
@@ -566,6 +568,7 @@ public class COSArray extends COSBase implements Iterable<COSBase>, COSUpdateInf
      * This will take an COSArray of numbers and convert it to a float[].
      *
      * @return This COSArray as an array of float numbers.
+     * done
      */
     public float[] toFloatArray()
     {

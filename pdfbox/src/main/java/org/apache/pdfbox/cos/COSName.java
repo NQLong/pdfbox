@@ -732,6 +732,7 @@ public final class COSName extends COSBase implements Comparable<COSName>
         return "COSName{" + name + "}";
     }
 
+    //done
     @Override
     public boolean equals(Object object)
     {

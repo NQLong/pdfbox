@@ -105,6 +105,7 @@ public class PDPageTree implements COSObjectable, Iterable<PDPage>
      * @param node page object
      * @param key the key to look up
      * @return COS value for the given key
+     * done
      */
     public static COSBase getInheritableAttribute(COSDictionary node, COSName key)
     {
@@ -135,6 +136,7 @@ public class PDPageTree implements COSObjectable, Iterable<PDPage>
      * Helper to get kids from malformed PDFs.
      * @param node page tree node
      * @return list of kids
+     * done
      */
     private List<COSDictionary> getKids(COSDictionary node)
     {
