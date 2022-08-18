@@ -279,6 +279,7 @@ public class COSDictionary extends COSBase implements COSUpdateInfo
      *
      * @param key The key to the object,
      * @param value The string value for the name.
+     * done
      */
     public void setName(String key, String value)
     {
@@ -291,6 +292,7 @@ public class COSDictionary extends COSBase implements COSUpdateInfo
      *
      * @param key The key to the object,
      * @param value The string value for the name.
+     * done
      */
     public void setName(COSName key, String value)
     {
@@ -351,6 +353,7 @@ public class COSDictionary extends COSBase implements COSUpdateInfo
      *
      * @param key The key to the object,
      * @param value The string value for the name.
+     * done
      */
     public void setString(String key, String value)
     {
@@ -361,6 +364,7 @@ public class COSDictionary extends COSBase implements COSUpdateInfo
      * This is a convenience method that will convert the value to a COSString object. If it is null then the object
      * will be removed.
      *
+     * done
      * @param key The key to the object,
      * @param value The string value for the name.
      */
@@ -1165,6 +1169,7 @@ public class COSDictionary extends COSBase implements COSUpdateInfo
      * @param bitFlag the bitPosition to get the value from.
      *
      * @return true if the number at bitPos is '1'
+     * done
      */
     public boolean getFlag(COSName field, int bitFlag)
     {
